@@ -248,6 +248,7 @@ export const fetchPermission = async (req, res) => {
                 attributes: ['permission_id', 'permission'],
             }]
         });
+
         return res.status(200).json({ status: true, data });
     }
     catch (error) {
